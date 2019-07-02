@@ -1,0 +1,130 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <title>Networks</title>
+
+    <link rel="stylesheet" type="text/css" href="css/vis.css">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/vis.css">
+
+
+
+
+</head>
+
+<body onload="loadGraph()">
+
+    <div class="container-fluid" id="fundo">
+        <div class="row m-0">
+            <div class="col-md-12 top">
+                <div id="network">
+                </div>
+            </div>
+            <div class="col-md-12 bottom">
+                <div class="row" align="center">
+                    <div class="col-md-12 mt-3">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="pegarAnexo"
+                                    aria-describedby="inputGroupFileAddon04">
+                                <label class="custom-file-label" for="inputGroupFile04">Insira um arquivo</label>
+                            </div>
+                            <button type="button" id="reset">RESETAR GRAFO</button>
+                            <button type="button" id="removeAzuis">ESCONDER ARESTAS AZUIS</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Forte Conexa</legend>
+                            <button type="button" id="forteConexa">Rodar</button>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Labirinto</legend>
+                            Tamanho: <input type="text" name="nLabirinto" id="nLabirinto">
+                            <button type="button" id="labirinto">Rodar</button>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Colorir Grafo</legend>
+                            Vertice inicial: <input type="text" id="iniciaColorir">
+                            <button type="button" id="COLORIR">Rodar</button>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Busca em Profundidade</legend>
+                            Vertice inicial: <input type="text" name="inicialBFS" id="inicialBFS">
+                            <button type="button" id="BFS">Rodar</button>
+
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Busca em Largura</legend>
+                            Vertice inicial: <input type="text" name="inicialDFS" id="inicialDFS">
+                            <button type="button" id="DFS">Rodar</button>
+
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">PRIM (AGM)</legend>
+                            Vertice inicial: <input type="text" id="inicialPRIM">
+                            <button type="button" id="PRIM">Rodar</button>
+                        </fieldset>
+                    </div>
+                    <div class="col-md-3">
+                        <fieldset class="fieldset-border">
+                            <legend class="legend-border">Caminho mais curto</legend>
+                            Vertice inicial: <input type="text" id="inicialCMC">
+                            <button type="button" id="CMC">Rodar</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="col-md-12 lab">
+                    <canvas id="canvas" width="1025" height="750"></canvas>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="lib/jquery.js"></script>
+        <!-- <script src="lib/jcanvas.min.js"></script> -->
+        <script src="lib/vis.js"></script>
+        <script src="lib/bootstrap.js"></script>
+        <script src="js/printGraph.js"></script>
+        <script src="js/js.js"></script>
+        <script src="js/getGrafo.js"></script>
+        <script src="js/DFS.js"></script>
+        <script src="js/BFS.js"></script>
+        <script src="js/colorir.js"></script>
+        <script src="js/PRIM.js"></script>
+        <script src="js/dijkstra.js"></script>
+        <script src="js/forteConexa.js"></script>
+        <script src="js/labirinto.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
